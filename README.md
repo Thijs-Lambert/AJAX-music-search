@@ -1,5 +1,5 @@
 # AJAX-music-search
-## Exercise on creating a site to search and display artists/songs
+###### Exercise on creating a site to search and display artists/songs
 
 ### Goals
 
