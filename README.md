@@ -12,3 +12,5 @@ Use the [musicdemons api](https://musicdemons.com/api/v1/) to create a website t
 ___
 * optional: using the YouTube player API display the lyrics of the song that is playing
 ___
+
+[example](https://thijs-lambert.github.io/AJAX-music-search/)
