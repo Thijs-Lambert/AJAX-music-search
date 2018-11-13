@@ -1,7 +1,7 @@
 # AJAX-music-search
 
 ### Overview
-The learning objective for the exercise is to make use of AJAX to fetch- and display data and we'll create a simple youtube clone with this [API](https://musicdemons.com/api).
+The learning objective for the exercise is to make use of AJAX (asynchronous javascript) to fetch- and display data and you'll create a simple youtube clone with data from this [API](https://musicdemons.com/api).
 
 ### Objectives
 There's **two main user stories** to this app:
@@ -17,3 +17,16 @@ There's **two main user stories** to this app:
 
 #### Online example
 [Example using fetch](https://thijs-lambert.github.io/AJAX-music-search/)
+
+#### How to get started
+
+Start with the provided boilerplate. The boilerplate has a JS folder which contains a `script.js` that has pre-made functions for the foundations of the project and guiding you in the right direction. And also a css folder with some basic styling to get you started.
+
+### Completion checklist
+
+- [ ] Create an autocomplete search with your AJAX knowledge
+- [ ] Display the autocomplete options in a clickable list
+- [ ] Allow the user to select an artist
+- [ ] Fetch and display the available youtube videos for the selected artist
+- [ ] Optional: using the YouTube player API display the lyrics of the song that is playing
+
