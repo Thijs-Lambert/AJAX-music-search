@@ -21,8 +21,10 @@
         const $title = document.createElement('h3');
         const $video = document.createElement('iframe');
 
-        $video.setAttribute('width', '420');
-        $video.setAttribute('height', '315');
+        $title.innerText = result.title;
+
+        $video.setAttribute('min-width', '420');
+        $video.setAttribute('min-height', '315');
         $video.setAttribute('src', `https://www.youtube.com/embed/${result.youtube_id}`)
 
         const $songListItem = document.createElement('li');
@@ -31,7 +33,12 @@
         $songListItem.appendChild($video);
 
         return $songListItem;
-    }
+    };
+
+    const createArtistInfo = artist => {
+        const $title = document.querySelector('.artist');
+        $title.innerText = artist.name;
+    };
 
     const search = value => {
         const url = `https://musicdemons.com/api/v1/artist/autocomplete`;
@@ -53,7 +60,7 @@
 
         fetch(url)
         .then(response => response.json())
-        .then(jsonData => console.log(jsonData));
+        .then(jsonData => createArtistInfo(jsonData));
     };
 
     const findSongsById = id => {
@@ -65,13 +72,22 @@
     }
 
     const handleKeyUpSearch = e => {
+        const $songs = document.querySelector(`.songs`);
+        $songs.innerHTML = "";
         const $input = e.currentTarget;
-        search($input.value);
+        if($input.value == ""){
+            const $results = document.querySelector(`.results`);
+            $results.innerHTML = "";
+        }else {
+            search($input.value);
+        }
     };
 
     const handleClick = e => {
         const $results = document.querySelector(`.results`);
+        const $search = document.querySelector('.search');
         $results.innerHTML = "";
+        $search.innerText = "";
 
         const $input = e.target;
         findArtistById($input.id);
