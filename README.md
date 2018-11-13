@@ -1,11 +1,14 @@
 # AJAX-music-search
-###### Exercise on creating a site to search and display artists/songs
+## Create your own youtube clone
 
 ### Goals
 
-Use the [musicdemons api](https://musicdemons.com/api/v1/) to create a website to search and display a selection of youtube videos from an artist. Make it so the song that's playing has its lyrics displayed
+Use the [musicdemons api](https://musicdemons.com/api/v1/) to create a website to search and display a selection of youtube videos from an artist. 
 
-* Setup the search
-* AJAX logic
-* Properly display the recieved data
-* Show lyrics for the selected song
+* Create an autocomplete search with your AJAX knowledge
+* Display the autocomplete options in a clickable list
+* Allow the user to select an artist
+* Fetch and display the available youtube videos for the selected artist
+___
+* optional: using the YouTube player API display the lyrics of the song that is playing
+___
