@@ -13,4 +13,4 @@ ___
 * optional: using the YouTube player API display the lyrics of the song that is playing
 ___
 
-[example](https://thijs-lambert.github.io/AJAX-music-search/)
+[Example using fetch](https://thijs-lambert.github.io/AJAX-music-search/)
