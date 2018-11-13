@@ -11,10 +11,27 @@
 
     const createSongList = songs => {
         const $songs = document.querySelector(`.songs`);
-        $songs.innerHTML = songs.map(createSongListItem).join(``);
+        songs.forEach(song => {
+            $songs.appendChild(createSongListItem(song));
+        });
+
     }
 
-    const createSongListItem = result => `<li class="song" id="${result.id}">${result.title}</li>`;
+    const createSongListItem = result => {
+        const $title = document.createElement('h3');
+        const $video = document.createElement('iframe');
+
+        $video.setAttribute('width', '420');
+        $video.setAttribute('height', '315');
+        $video.setAttribute('src', `https://www.youtube.com/embed/${result.youtube_id}`)
+
+        const $songListItem = document.createElement('li');
+
+        $songListItem.appendChild($title);
+        $songListItem.appendChild($video);
+
+        return $songListItem;
+    }
 
     const search = value => {
         const url = `https://musicdemons.com/api/v1/artist/autocomplete`;
