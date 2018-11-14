@@ -25,6 +25,7 @@ Upon selecting an artist out of the suggestion list, display a list of videos fr
 * Find the correct method to fetch the songs of a selected artist in the [API](https://musicdemons.com/api).
 * Try to log the data of the selected artist to the console.
 * Dynamically create the list of videos
+
 ![search-feature](https://i.gyazo.com/476d5da034d8b3ce8b108e9e3a2dae07.gif)
 
 #### Online example
