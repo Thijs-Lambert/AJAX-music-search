@@ -9,10 +9,22 @@ There's **two main user stories** to this app:
 * A user can search for artists by name and they are displayed as a list so the user can see the search result
 * A user can click a search result item and it displays a list of related youtube videos for the user to watch/listen
 
-#### Search Artists
+
+### Search with autocomplete
+Create a search field that allows the users to search for artist. The user will see autocomplete suggestions based on his input.
+
+* Have a look at the [API](https://musicdemons.com/api) and look for the **autocomplete method**.
+* Use the user [input](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/search) to fetch the autocomplete options. Try to log the results to your console when the user presses enter in the input field.
+* Next, display the fetched data in a clickable list under the search field
+
 ![search-feature](https://i.gyazo.com/c082c4ba5eb929a45ead06890554a24c.gif)
 
 #### Select Artist
+Upon selecting an artist out of the suggestion list, display a list of videos from the selected artist
+
+* Find the correct method to fetch the songs of a selected artist in the [API](https://musicdemons.com/api).
+* Try to log the data of the selected artist to the console.
+* Dynamically create the list of videos
 ![search-feature](https://i.gyazo.com/476d5da034d8b3ce8b108e9e3a2dae07.gif)
 
 #### Online example
